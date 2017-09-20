@@ -3,7 +3,7 @@ MAINTAINER Michele Adduci <info@micheleadduci.net>
 
 VOLUME ["/document"]
 
-RUN apk update && apk upgrade && \
+RUN apk update && \
     apk --update add \
     ruby \
     ruby-dev \
@@ -24,7 +24,7 @@ RUN apk update && apk upgrade && \
     echo 'gem: --no-document' > /etc/gemrc && \
     gem install --no-ri --no-rdoc nokogiri && \
     gem install --no-ri --no-rdoc asciidoctor-diagram && \
-    gem install --no-ri --no-rdoc asciidoctor-pdf --version 1.5.0.alpha.15 && \
+    gem install --no-ri --no-rdoc asciidoctor-pdf --version 1.5.0.alpha.16 && \
     gem install --no-ri --no-rdoc asciidoctor-pdf-cjk && \
     gem install --no-ri --no-rdoc coderay pygments.rb thread_safe && \
     gem install --no-ri --no-rdoc slim && \
