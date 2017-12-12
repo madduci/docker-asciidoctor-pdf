@@ -1,5 +1,6 @@
-FROM alpine:3.6
-MAINTAINER Michele Adduci <info@micheleadduci.net>
+FROM alpine:3.7
+
+LABEL maintainer="info@micheleadduci.net"
 
 VOLUME ["/document"]
 

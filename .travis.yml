@@ -6,8 +6,7 @@ services:
   - docker
 
 install:
-  - docker build -t asciidoctor-pdf:1.50.alpha15 .
-  - docker tag asciidoctor-pdf:1.50.alpha15 asciidoctor-pdf:latest
+  - docker build -t madduci/docker-asciidoctor-pdf:latest .
 
 script:
   - docker images
