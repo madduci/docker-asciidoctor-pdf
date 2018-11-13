@@ -29,6 +29,7 @@ RUN apk update && \
     gem install --no-ri --no-rdoc asciidoctor-pdf-cjk && \
     gem install --no-ri --no-rdoc coderay pygments.rb thread_safe && \
     gem install --no-ri --no-rdoc slim && \
+    gem install --no-ri --no-rdoc concurrent-ruby && \
     gem install --no-ri --no-rdoc haml tilt && \
     apk del curl ruby-bundler postgresql-dev make gcc g++ && \
     rm -rf /var/cache/apk/*
