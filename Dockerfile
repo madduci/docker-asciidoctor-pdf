@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="info@micheleadduci.net"
+LABEL maintainer="michele.adduci@openlimit.com"
 
 VOLUME ["/document"]
 
