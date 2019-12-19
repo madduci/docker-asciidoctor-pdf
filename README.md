@@ -8,11 +8,11 @@ To build your own documents as PDF, simply run the container as:
 
 `docker run --rm -v /path/to/your/document/directory:/document madduci/docker-asciidoctor-pdf /document/your_document.adoc`
 
-Note that it is important to include /document ahead of your_document.adoc even though that may look strange on account of your document not being in that directory on your machine. That is how Docker knows how to access your file.
+> Note that it is important to include `/document` ahead of **your_document.adoc** even though that may look strange on account of > your document not being in that directory on your machine. That is how Docker knows how to access your file.
 
 Upon completion, the PDF will reside in the /path/to/your/document/directory.
 
-If you want to use some custom styles, just run it as
+If you want to use some [custom styles](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc), just run it as:
 
 `docker run --rm -v /path/to/your/document/directory:/document madduci/docker-asciidoctor-pdf -a pdf-stylesdir=/document/resources/themes -a pdf-style=your_style -a pdf-fontsdir=/document/resources/fonts /document/your_document.adoc`
 
