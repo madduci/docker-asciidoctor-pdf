@@ -23,14 +23,14 @@ RUN apk update && \
     postgresql-dev \
     bash && \
     echo 'gem: --no-document' > /etc/gemrc && \
-    gem install --no-rdoc nokogiri && \
-    gem install --no-rdoc asciidoctor-diagram && \
-    gem install --no-rdoc asciidoctor-pdf --version 1.5.0.rc.2 && \
-    gem install --no-rdoc asciidoctor-pdf-cjk && \
-    gem install --no-rdoc coderay pygments.rb thread_safe && \
-    gem install --no-rdoc slim && \
-    gem install --no-rdoc concurrent-ruby && \
-    gem install --no-rdoc haml tilt && \
+    gem install nokogiri && \
+    gem install asciidoctor-diagram && \
+    gem install asciidoctor-pdf --version 1.5.0.rc.2 && \
+    gem install asciidoctor-pdf-cjk && \
+    gem install coderay pygments.rb thread_safe && \
+    gem install slim && \
+    gem install concurrent-ruby && \
+    gem install haml tilt && \
     apk del curl ruby-bundler postgresql-dev build-base make gcc g++ && \
     rm -rf /var/cache/apk/*
 
