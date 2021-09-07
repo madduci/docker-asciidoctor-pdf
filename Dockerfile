@@ -25,7 +25,7 @@ RUN apk update && \
     echo 'gem: --no-document' > /etc/gemrc && \
     gem install nokogiri && \
     gem install asciidoctor-diagram && \
-    gem install asciidoctor-pdf --version 1.6.0 && \
+    gem install asciidoctor-pdf --version 1.6.1 && \
     gem install asciidoctor-pdf-cjk && \
     gem install coderay pygments.rb thread_safe && \
     gem install slim && \
