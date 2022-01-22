@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="Michele Adduci <adduci.michele@gmail.com>"
+LABEL maintainer="Michele Adduci <adduci@tutanota.com>"
 
 VOLUME ["/document"]
 
@@ -25,7 +25,7 @@ RUN apk update && \
     echo 'gem: --no-document' > /etc/gemrc && \
     gem install nokogiri && \
     gem install asciidoctor-diagram && \
-    gem install asciidoctor-pdf --version 1.6.1 && \
+    gem install asciidoctor-pdf --version 1.6.2 && \
     gem install asciidoctor-pdf-cjk && \
     gem install coderay pygments.rb thread_safe && \
     gem install slim && \
