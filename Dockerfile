@@ -14,6 +14,7 @@ RUN apk update && \
     ruby-bigdecimal \
     ruby-json \
     ruby-bundler \
+    ghostscript \
     libstdc++ \
     curl \
     tzdata \
@@ -24,7 +25,9 @@ RUN apk update && \
     bash && \
     echo 'gem: --no-document' > /etc/gemrc && \
     gem install nokogiri && \
+    gem install rghost && \
     gem install asciidoctor-diagram && \
+    gem install asciidoctor-plantuml && \
     gem install asciidoctor-pdf --version 1.6.2 && \
     gem install asciidoctor-pdf-cjk && \
     gem install coderay pygments.rb thread_safe && \
@@ -33,5 +36,7 @@ RUN apk update && \
     gem install haml tilt && \
     apk del curl ruby-bundler postgresql-dev build-base make gcc g++ && \
     rm -rf /var/cache/apk/*
+
+WORKDIR /document
 
 ENTRYPOINT ["asciidoctor-pdf"]

@@ -1,6 +1,6 @@
 # docker-asciidoctor-pdf
 
-[![Build Status](https://travis-ci.org/madduci/docker-asciidoctor-pdf.svg?branch=master)](https://travis-ci.org/madduci/docker-asciidoctor-pdf)
+[![Build and Publish](https://github.com/madduci/docker-asciidoctor-pdf/actions/workflows/build.yaml/badge.svg?branch=master)](https://github.com/madduci/docker-asciidoctor-pdf/actions/workflows/build.yaml)
 
 Dockerized version of Asciidoctor-PDF, useful to generate PDFs from Asciidoc files, including themes, exposing `asciidoctor-pdf` as entrypoint and `/document` as mounted volume where to build the file
 
