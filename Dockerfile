@@ -28,7 +28,7 @@ RUN apk update && \
     gem install rghost && \
     gem install asciidoctor-diagram && \
     gem install asciidoctor-plantuml && \
-    gem install asciidoctor-pdf --version 1.6.2 && \
+    gem install asciidoctor-pdf --version 2.0.0 && \
     gem install asciidoctor-pdf-cjk && \
     gem install coderay pygments.rb thread_safe && \
     gem install slim && \
