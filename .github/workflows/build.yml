@@ -38,7 +38,7 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             madduci/docker-asciidoctor-pdf:latest
-            madduci/docker-asciidoctor-pdf:2.3.15
+            madduci/docker-asciidoctor-pdf:2.3.17
           # build on feature branches, push only on master branch
           push: ${{ github.ref == 'refs/heads/master' }}
 
