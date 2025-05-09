@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="Michele Adduci <adduci@tutanota.com>"
+LABEL maintainer="Michele Adduci <michele@adduci.org>"
 
 VOLUME ["/document"]
 
@@ -28,7 +28,7 @@ RUN apk update && \
     gem install rghost && \
     gem install asciidoctor-diagram && \
     gem install asciidoctor-plantuml && \
-    gem install asciidoctor-pdf --version 2.3.18 && \
+    gem install asciidoctor-pdf --version 2.3.19 && \
     gem install asciidoctor-pdf-cjk && \
     gem install coderay pygments.rb thread_safe && \
     gem install slim && \
