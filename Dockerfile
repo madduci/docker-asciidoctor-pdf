@@ -8,11 +8,8 @@ RUN apk update && \
     apk --update add \
     ruby \
     ruby-dev \
-    ruby-irb \
     ruby-rake \
-    ruby-io-console \
     ruby-bigdecimal \
-    ruby-json \
     ruby-bundler \
     ghostscript \
     libstdc++ \
